@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Back It Up{% endblock %}
+
+{% block body %}
+
+    <h1 id="title">Back It Up</h1>
+
+    <div id="sign-in-container">
+        <form method="post" action="">
+            <label for="username">Username</label><br>
+            <input type="text" name="username"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+{% endblock %}

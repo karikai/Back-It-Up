@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DashboardController!{% endblock %}
+
+{% block body %}
+
+<div id="dashboard">
+    <div id="side-panel">
+        <div>
+            <h3>Downloads</h3>
+        </div>
+        <div class="active">
+            <h3>Upload Files</h3>
+        </div>
+    </div>
+    <div id="file-upload">
+        <h1 id="title">Select a File</h1>
+        <form action="" enctype="multipart/form-data" method="post">
+            <div class="button-container">
+                <input name="file" type="file">
+                <input class="download" name="submit" type="submit" value="Upload">
+            </div>
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}

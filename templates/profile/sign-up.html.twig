@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block body %}
+
+    <div class="grid-container">
+        <div class="grid-item"><img src="{{ asset('assets/images/robot-1.png') }}" alt="Blue Robot"></div>
+        <div class="grid-item"><img src="{{ asset('assets/images/robot-2.png') }}" alt="Yellow Robot"></div>
+        <div class="grid-item"><img src="{{ asset('assets/images/robot-3.png') }}" alt="Green Robot"></div>
+        <div class="grid-item"><img src="{{ asset('assets/images/robot-4.png') }}" alt="Maroon Robot"></div>
+    </div>
+
+    <div id="sign-in-container">
+        <form action="POST">
+            <label for="new-username">Username</label><br>
+            <input type="text" name="new-username"><br>
+            <label for="new-email">Email</label><br>
+            <input type="email" name="new-email"><br>
+            <label for="new-password">Password</label><br>
+            <input type="password" name="new-password"><br>
+            <label for="new-confirm-password">Confirm Password</label><br>
+            <input type="password" name="new-confirm-password"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,15 @@
+index:
+   path: /
+   controller: App\Controller\ProfileController::index
+
+sign-up:
+   path: /sign-up
+   controller: App\Controller\ProfileController::createProfile
+
+download:
+   path: /downloads
+   controller: App\Controller\DashboardController::download
+
+upload:
+   path: /uploads
+   controller: App\Controller\DashboardController::upload
