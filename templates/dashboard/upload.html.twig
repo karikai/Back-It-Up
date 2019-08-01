@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'logged-in.base.html.twig' %}
 
 {% block title %}Hello DashboardController!{% endblock %}
 
@@ -6,10 +6,10 @@
 
 <div id="dashboard">
     <div id="side-panel">
-        <div>
+        <div onclick="window.location.href = '/downloads';">
             <h3>Downloads</h3>
         </div>
-        <div class="active">
+        <div onclick="window.location.href = '/uploads';" class="active">
             <h3>Upload Files</h3>
         </div>
     </div>

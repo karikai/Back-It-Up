@@ -6,9 +6,17 @@ sign-up:
    path: /sign-up
    controller: App\Controller\ProfileController::createProfile
 
+log-out:
+   path: /log-out
+   controller: App\Controller\ProfileController::logOut
+
 download:
    path: /downloads
    controller: App\Controller\DashboardController::download
+
+download-link:
+   path: /download/{uid}/{filename}
+   controller: App\Controller\DashboardController::downloadLink
 
 upload:
    path: /uploads

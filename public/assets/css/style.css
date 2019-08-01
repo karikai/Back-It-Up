@@ -65,6 +65,16 @@
     font-weight: 600;
 }
 
+.download-a {
+    width: 30%;
+    border: #707070 1px solid;
+    padding: 1% 1%;
+    background: #3686FF;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -100,6 +110,11 @@
 #side-panel > div {
     padding: 7.5%;
     text-align: center;
+}
+
+#side-panel > div:hover {
+    background:#3686FF;
+    cursor: pointer;
 }
 
 #side-panel > .active {
@@ -145,8 +160,8 @@
     text-align: center;
 }
 
-.file-download > .download{
-    display: inline;
+.file-download > * {
+    display: inline-block;
 }
 
 .button-container {
