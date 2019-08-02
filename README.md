@@ -1,11 +1,10 @@
 # Back-It-Up
 
-This project is a php and mysql based application that allows users to back up their files. The files are stored in the directory
-public/uploads.
+This project is a PHP and MySQL based application that utilizes the Symfony framework. The web app allows users to back up their files and stores them in the uploads directory.
 
 ## Prerequisites
 
-To connect this to your own mysql server you must add your server and user information to src/service/databaseconnector.php.
+To connect this to your own MySQL server you must add your server and user information to src/service/databaseconnector.php.
 
 Then you must have the following tables and schemas in your database:
 
@@ -45,3 +44,14 @@ CREATE TABLE `files` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 You can run this server locally with the 'symfony server:start' command.
+
+## Important Directories and Files
+
+/public/uploads - location of uploaded files
+/src/Service/DatabaseConnector.php - database connection file
+/public/assets - assets
+/src/Controller - controllers
+/src/Service - services
+/src/templates - templates
+/config/routes.yaml - url routes configuration
+/config/services.yaml - services configuration
