@@ -16,14 +16,12 @@
     <div id="files">
         <div id="files-header">
             <h5 class="file-name">Title</h5>
-            <h5 class="file-size">File Size</h5>
             <h5 class="file-date">Date Created</h5>
             <h5 class="file-download">Download</h5>
         </div>
             {% for data in dataArray %}
                 <div>
                     <h5 class="file-name">{{ data.file_name }}</h5>
-                    <h5 class="file-size">3.42 MB</h5>
                     <h5 class="file-date">{{ data.uploaded_on }}</h5>
                     <div class="file-download">
                         <a class="download-a" href="/download/{{ user_id }}/{{ data.file_name }}">Download</a>
