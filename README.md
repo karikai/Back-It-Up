@@ -18,7 +18,7 @@ created_on datetime
 ---SQL STATEMENT---  
   
 CREATE TABLE `users` (  
- `id` int(11) NOT NULL AUTO_INCREMENT,  
+ `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,  
  `email` varchar(255) NOT NULL,  
  `username` varchar(255) NOT NULL,  
  `pwd` varchar(255) NOT NULL,  
